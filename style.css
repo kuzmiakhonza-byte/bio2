@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+header h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    nav { text-align: center; }
+    nav a { display: inline-block; margin: 4px 6px; }
+}
+
+.hero {
+    display: block;
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    margin: 12px auto 0 auto;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+    body { align-items: flex-start; padding-top: 20px; }
+    .container { padding: 12px; }
+    .hero { max-width: 320px; }
+    .icon { width: 22px; height: 22px; }
+}
